@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/login.css">
+</head>
+
+<body>
+
+
+
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #1f422e;
+        }
+
+        .main {
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #2e8b57;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            width: 35%;
+            height: 60vh;
+            margin-left: 30%;
+            margin-top: 10%;
+
+
+        }
+
+        h1 {
+            margin-bottom: 2vw;
+            color: #ffffff;
+            text-align: center;
+
+        }
+
+        .input-2 {
+            margin-top: 2vw;
+        }
+
+        input {
+            border-radius: 1.8vw;
+            margin-left: 3%;
+            height: 4vh;
+            padding: 1vw;
+            width: 30vw;
+            font-size: 22px;
+            border: 2px solid #ffffff;
+        }
+
+        button {
+            font-size: 22px;
+            margin-left: 29%;
+            padding: 1vw;
+            width: 15vw;
+            border-radius: 2vw;
+            margin-top: 2vw;
+            color: #fff;
+            background-color: #1f422e;
+            margin-bottom: 1vw;
+            transition: all .45s ease;
+            cursor: pointer;
+            border: 1px solid #1f422e;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        button:hover {
+
+            transform: translate(5px);
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            margin-left: 35%;
+            margin-top: 2vw;
+        }
+    </style>
+
+
+
+    <div class="main">
+        <h1>User Login</h1>
+        <p></p>
+
+        <form action="/login" method="post">
+
+            <input type="text" name="name" placeholder="Username" class="input-1"><br>
+            <input type="password" name="password" placeholder="Password" class="input-2"><br>
+            <button type="submit">Submit</button>
+            {{!-- <input type="submit"> --}}
+
+        </form>
+
+        <a href="/signup">Make a new account?</a>
+    </div>
+</body>
+
+</html>
